@@ -8,8 +8,15 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Controller {
+    private User admin = new User("admin", "admin");
+    private User user = new User("user", "user");
+    private loginPage lp = new loginPage();
+
+    private User[] arrUser = new User[]{admin, user};
+
     public void toLogin(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("loginAdmin.fxml"));
         Scene scene = new Scene(root);
@@ -17,6 +24,21 @@ public class Controller {
 
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void login(MouseEvent event) throws IOException {
+        int tmp = 0;
+        if (lp.getUsername() != null || lp.getPassword() != null) {
+            for (User u : arrUser) {
+                if (u.getUsername().equals(lp.getUsername().getText()) && u.getPassword().equals(lp.getPassword().getText())) {
+                    tmp++;
+                    toHalamanUtamaAdmin(event);
+                }
+            }
+            if (tmp == 0) {
+                lp.getWarning().setVisible(true);
+            }
+        }
     }
 
     public void toHalamanUtamaAdmin(MouseEvent event) throws IOException {

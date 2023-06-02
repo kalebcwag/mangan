@@ -1,4 +1,4 @@
-package com.dhaharmas;
+package com.example.prototype;
 
 public class User {
     
