@@ -12,16 +12,16 @@ import javafx.stage.Stage;
 
 public class RumahMakan {
     
-    int id;
-    String name;
-    String noTelp;
-    String kategori;
-    String alamat;
-    static int idNow = 0;
-    Button namaRumahMakan;
-    Parent root;
-    Scene akar;
-    ArrayList<RumahMakan> listRM = new ArrayList<>();
+    private int id;
+    private String name;
+    private String noTelp;
+    private String kategori;
+    private String alamat;
+    private static int idNow = 0;
+    private Button namaRumahMakan;
+    private Parent root;
+    private Scene akar;
+    private ArrayList<RumahMakan> listRM = new ArrayList<>();
 
     public RumahMakan(String name, String noTelp, String kategori, String alamat) {
         this.name = name;
@@ -66,10 +66,35 @@ public class RumahMakan {
         return namaRumahMakan;
     }
 
-    
+    public int getId() {
+        return id;
+    }
 
+    public String getName() {
+        return name;
+    }
 
+    public String getNoTelp() {
+        return noTelp;
+    }
 
+    public String getKategori() {
+        return kategori;
+    }
 
+    public String getAlamat() {
+        return alamat;
+    }
 
+    public static int getIdNow() {
+        return idNow;
+    }
+
+    public Scene getAkar() {
+        return akar;
+    }
+
+    public ArrayList<RumahMakan> getListRM() {
+        return listRM;
+    }
 }
