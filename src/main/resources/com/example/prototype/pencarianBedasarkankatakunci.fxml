@@ -3,13 +3,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.Controller">
    <children>
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0">
          <children>
@@ -28,16 +28,6 @@
                   <Separator fx:id="separator" layoutX="2.0" layoutY="128.0" prefHeight="31.0" prefWidth="1280.0" />
                </children>
             </Pane>
-            <TextField layoutX="338.0" layoutY="172.0" prefHeight="72.0" prefWidth="557.0" promptText="Keyword">
-               <font>
-                  <Font name="System Italic" size="15.0" />
-               </font>
-            </TextField>
-            <Button layoutX="920.0" layoutY="185.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="87.0" text="Cari">
-               <font>
-                  <Font name="System Bold Italic" size="20.0" />
-               </font>
-            </Button>
             <AnchorPane layoutX="12.0" layoutY="260.0" prefHeight="87.0" prefWidth="538.0">
                <children>
                   <Label layoutX="39.0" layoutY="-6.0" prefHeight="66.0" prefWidth="557.0" text="Warung yang menjual keyword">
@@ -47,75 +37,16 @@
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="14.0" layoutY="335.0" prefHeight="87.0" prefWidth="538.0">
-               <children>
-                  <Label layoutX="53.0" layoutY="8.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-                     <font>
-                        <Font name="Lucida Sans Demibold Italic" size="15.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-            <Label layoutX="69.0" layoutY="432.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-               <font>
-                  <Font name="Lucida Sans Demibold Italic" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="69.0" layoutY="521.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-               <font>
-                  <Font name="Lucida Sans Demibold Italic" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="70.0" layoutY="609.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-               <font>
-                  <Font name="Lucida Sans Demibold Italic" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="488.0" layoutY="345.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-               <font>
-                  <Font name="Lucida Sans Demibold Italic" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="485.0" layoutY="434.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-               <font>
-                  <Font name="Lucida Sans Demibold Italic" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="486.0" layoutY="525.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-               <font>
-                  <Font name="Lucida Sans Demibold Italic" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="486.0" layoutY="612.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-               <font>
-                  <Font name="Lucida Sans Demibold Italic" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="914.0" layoutY="347.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-               <font>
-                  <Font name="Lucida Sans Demibold Italic" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="915.0" layoutY="428.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-               <font>
-                  <Font name="Lucida Sans Demibold Italic" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="911.0" layoutY="519.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-               <font>
-                  <Font name="Lucida Sans Demibold Italic" size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="912.0" layoutY="613.0" prefHeight="66.0" prefWidth="321.0" style="-fx-background-color: BCEAD5;" text="Text">
-               <font>
-                  <Font name="Lucida Sans Demibold Italic" size="15.0" />
-               </font>
-            </Label>
             <Button fx:id="backButton" layoutX="48.0" layoutY="189.0" mnemonicParsing="false" onMouseClicked="#toHalamanUtamaUser" prefHeight="39.0" prefWidth="94.0" text="Back">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
+            <ScrollPane id="result" layoutX="23.0" layoutY="354.0" prefHeight="356.0" prefWidth="903.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+              </content>
+            </ScrollPane>
          </children>
       </Pane>
       <Hyperlink fx:id="loginAdmin" layoutX="1049.0" layoutY="48.0" onMouseClicked="#toLogin" style="-fx-underline: true;" text="Login Admin">

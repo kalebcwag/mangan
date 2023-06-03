@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.Controller">
    <children>
       <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0">
          <top>
@@ -77,40 +77,31 @@
                               <Font size="18.0" />
                            </font>
                         </Button>
-                        <Label fx:id="namaTempat" layoutX="150.0" layoutY="74.0" text="Nasi Goreng Yaul">
+                        <Label  fx:id="namaTempat" layoutX="153.0" layoutY="22.0">
                            <font>
                               <Font name="System Bold" size="48.0" />
                            </font>
                         </Label>
-                        <ImageView fx:id="gambar1" fitHeight="200.0" fitWidth="275.0" layoutX="152.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="gambar1" fitHeight="200.0" fitWidth="275.0" layoutX="153.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/nasgor.jpg" />
                            </image>
                         </ImageView>
-                        <SplitPane dividerPositions="0.29797979797979796" layoutX="153.0" layoutY="370.0" orientation="VERTICAL" prefHeight="176.0" prefWidth="527.0">
+                        <SplitPane layoutX="153.0" layoutY="370.0" orientation="VERTICAL" prefHeight="176.0" prefWidth="527.0">
                            <items>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="49.0" prefWidth="532.0" style="-fx-background-color: #BCEAD5;">
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="142.0" prefWidth="526.0">
                                  <children>
-                                    <Label alignment="CENTER" layoutX="-42.0" layoutY="-6.0" prefHeight="57.0" prefWidth="606.0" text="Detail" textAlignment="CENTER">
-                                       <font>
-                                          <Font size="24.0" />
-                                       </font>
-                                    </Label>
-                                 </children>
-                              </AnchorPane>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="14.0" prefWidth="605.0">
-                                 <children>
-                                    <Label layoutX="7.0" layoutY="27.0" prefHeight="63.0" prefWidth="604.0" text="08xx-xxxx-xxxx">
+                                    <Label fx:id="notelp" layoutX="7.0" layoutY="27.0" prefHeight="63.0" prefWidth="604.0">
                                        <font>
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="6.0" layoutY="81.0" prefHeight="27.0" prefWidth="222.0" text="https/www.anu.com">
+                                    <Label fx:id="kategori" layoutX="6.0" layoutY="81.0" prefHeight="27.0" prefWidth="222.0">
                                        <font>
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="9.0" layoutY="-5.0" prefHeight="63.0" prefWidth="661.0" text="Alamat">
+                                    <Label fx:id="alamatresto" layoutX="9.0" layoutY="-5.0" prefHeight="63.0" prefWidth="661.0">
                                        <font>
                                           <Font size="18.0" />
                                        </font>
@@ -144,6 +135,15 @@
                               </ScrollPane>
                            </items>
                         </SplitPane>
+                        <AnchorPane layoutX="151.0" layoutY="320.0" minHeight="0.0" minWidth="0.0" prefHeight="49.0" prefWidth="532.0" style="-fx-background-color: #BCEAD5;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="-42.0" layoutY="-6.0" prefHeight="57.0" prefWidth="606.0" text="Detail" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
                      </children>
                   </AnchorPane>
                </content>

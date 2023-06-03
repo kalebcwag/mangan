@@ -9,6 +9,8 @@ import javafx.stage.Stage;
 public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
+        Controller control = new Controller();
+        control.putUsers();
         Parent root = FXMLLoader.load(getClass().getResource("halamanUtamaUser.fxml"));
         stage.setTitle("Halaman Utama");
 
