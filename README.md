@@ -12,3 +12,6 @@ Dahar Mas adalah aplikasi yang digunakan untuk mencari tempat makan. Pencarian t
 1. Menampilkan 10 tempat makan terbaik berdasarkan rating.
 2. Pencarian berdasarkan kata kunci.
 3. Pencarian berdasarkan kategori.
+
+Link video protoytype:
+https://youtu.be/wTX1kmLavRA
