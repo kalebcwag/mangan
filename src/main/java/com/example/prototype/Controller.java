@@ -22,6 +22,7 @@ public class Controller {
     private User admin = new User("admin", "admin");
     private User user = new User("user", "user");
     private loginPage lp = new loginPage();
+    App app = App.getApp();
 
     HashMap<String, String> userMap = new HashMap<String, String>();
 
@@ -42,11 +43,15 @@ public class Controller {
 
     public void login(MouseEvent event) throws IOException {
         if (lp.getUsername() != null || lp.getPassword() != null) {
-            if(userMap.containsKey(lp.getUsername().getText()) && lp.getPassword().getText().equals(userMap.get(lp.getUsername().getText()))){
-                toHalamanUtamaAdmin(event);
+            String username = lp.getUsername().getText();
+            String password = lp.getPassword().getText();
+
+            if (Database.cekUser(username, password)){
+                app.changeScene("halamanUtamaAdmin.fxml");
             }
         }
     }
+
 
     public void toHalamanUtamaAdmin(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("halamanUtamaAdmin.fxml"));
@@ -94,7 +99,7 @@ public class Controller {
         Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 
         stage.setScene(scene);
-        // stage.show();
+        stage.show();
     }
 
     public void toEditKategori(MouseEvent event) throws IOException {

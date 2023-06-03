@@ -7,16 +7,31 @@ import javafx.scene.Scene;
 import javafx.scene.chart.PieChart.Data;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class App extends Application {
+    private static Stage stage;
+    private static App app;
 
     @Override
     public void start(Stage stage) throws Exception {
+        app = this;
+        App.stage = stage;
         RumahMakan[] rm = {new RumahMakan("Nasi Goreng Bang Rusdi", "0271", "Nasi", "Ngawi"),
         new RumahMakan("Nasi Cumi Hitam Pak Kris", "0821190889", "Nasi", "jl condong"),
         new RumahMakan("Mie Goreng Jawa", "08334677639", "Mie", "jl munggur"),
         new RumahMakan("Ayam Goreng", "0893948378499", "Snack", "jl kaliurang"),
         new RumahMakan("Pasta frizz", "08111908939", "Mie", "jl gatot")
         };
+
+        User kaleb = new User("kaleb", "kaleb");
+        User yandi = new User("yandi", "yandi");
+        User glen = new User("glen", "glen");
+
+        Database.add(kaleb);
+        Database.add(yandi);
+        Database.add(glen);
+
         for (RumahMakan r : rm) {
             Database.add(r);
         }
@@ -31,6 +46,12 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch();
+    }
+
+    public static App getApp(){ return app;}
+    public void changeScene(String fxml) throws IOException {
+        Parent pane = FXMLLoader.load(getClass().getResource(fxml));
+        stage.getScene().setRoot(pane);
     }
 
 

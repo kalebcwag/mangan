@@ -10,6 +10,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 
+import java.io.IOException;
+
 public class loginPage {
 
     @FXML
@@ -47,6 +49,7 @@ public class loginPage {
 
     @FXML
     private TextField username;
+    App app = App.getApp();
 
     @FXML
     private Label warning;
@@ -63,6 +66,17 @@ public class loginPage {
 
     public PasswordField getPassword() {
         return password;
+    }
+
+    public void login(MouseEvent event) throws IOException {
+        if (username.getText() != null && password.getText() != null) {
+            String username = this.username.getText();
+            String password = this.password.getText();
+
+            if (Database.cekUser(username, password)){
+                app.changeScene("halamanUtamaAdmin.fxml");
+            }
+        }
     }
 
     public TextField getUsername() {
