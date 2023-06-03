@@ -13,7 +13,7 @@ public class Database {
     public static ArrayList<RumahMakan> toSearchByKeyword(String keyWord) {
         ArrayList<RumahMakan> rmlist = new ArrayList<>();
         for (RumahMakan rm: ListRumahMakan) {
-            if ((rm.name.toLowerCase()).contains(keyWord.toLowerCase())) {
+            if ((rm.getName().toLowerCase()).contains(keyWord.toLowerCase())) {
                 rmlist.add(rm);
             }
 
@@ -23,7 +23,7 @@ public class Database {
     public static ArrayList<RumahMakan> toSearchByCategory(String keyWord) {
         ArrayList<RumahMakan> rmlist = new ArrayList<>();
         for (RumahMakan rm: ListRumahMakan) {
-            if ((rm.kategori.toLowerCase()).contains(keyWord.toLowerCase())) {
+            if ((rm.getKategori().toLowerCase()).contains(keyWord.toLowerCase())) {
                 rmlist.add(rm);
             }
 
