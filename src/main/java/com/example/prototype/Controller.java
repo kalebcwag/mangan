@@ -83,6 +83,26 @@ public class Controller {
         ((Stage) currentScene.getWindow()).setScene(scene);
         
     }
+
+    public void delete(MouseEvent event) throws IOException {
+        Parent root;
+        FXMLLoader fxmlLoader = new FXMLLoader(RumahMakan.class.getResource("detailTempat.fxml"));
+        try {
+            root = (Parent) fxmlLoader.load();
+            root.applyCss();
+            root.layout();
+            String namaRM = ((Label) root.lookup("#namaTempat")).getText();
+            for (RumahMakan rm:Database.getListRumahMakan()) {
+                if(namaRM.equals(rm.getName())){
+                    Database.getListRumahMakan().remove(rm);
+                }
+            }
+
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     public void toSearchByKeywordAdmin(MouseEvent event) throws IOException {
         Scene currentScene = ((Node) event.getSource()).getScene();
         TextField search = (TextField) currentScene.lookup("#searchBar");

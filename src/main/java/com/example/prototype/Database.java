@@ -55,6 +55,9 @@ public class Database {
     public static ArrayList<Kategori> getListKategori() {
         return listKategori;
     }
+    public static ArrayList<RumahMakan> getListRumahMakan() {
+        return ListRumahMakan;
+    }
 
     public static void deleteKategori(int index){
         listKategori.remove(index);
