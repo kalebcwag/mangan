@@ -21,25 +21,27 @@ public class App extends Application {
         User yandi = new User("yandi", "yandi");
         User glen = new User("glen", "glen");
 
+        Kategori k1 = new Kategori("Nasi");
+        Kategori k2 = new Kategori("Mie");
+        Kategori k3 = new Kategori("Snack");
+
         Database.addUser(kaleb);
         Database.addUser(yandi);
         Database.addUser(glen);
 
-        RumahMakan[] rm = {new RumahMakan("Nasi Goreng Bang Rusdi", "0271", "Nasi", "Ngawi"),
-        new RumahMakan("Nasi Cumi Hitam Pak Kris", "0821190889", "Nasi", "jl condong"),
-        new RumahMakan("Mie Goreng Jawa", "08334677639", "Mie", "jl munggur"),
-        new RumahMakan("Ayam Goreng", "0893948378499", "Snack", "jl kaliurang"),
-        new RumahMakan("Pasta frizz", "08111908939", "Mie", "jl gatot")
+        RumahMakan[] rm = {new RumahMakan("Nasi Goreng Bang Rusdi", "0271", k1, "Ngawi"),
+        new RumahMakan("Nasi Cumi Hitam Pak Kris", "0821190889", k1, "jl condong"),
+        new RumahMakan("Mie Goreng Jawa", "08334677639", k2, "jl munggur"),
+        new RumahMakan("Ayam Goreng", "0893948378499", k3, "jl kaliurang"),
+        new RumahMakan("Pasta frizz", "08111908939", k2, "jl gatot")
         };
         for (RumahMakan r : rm) {
             Database.addRm(r);
         }
 
-        Database.addCategory(new Kategori("Nasi"));
-        Database.addCategory(new Kategori("Mie"));
-        Database.addCategory(new Kategori("Ayam"));
-
-
+        Database.addCategory(k1);
+        Database.addCategory(k2);
+        Database.addCategory(k3);
 
         Parent root = FXMLLoader.load(getClass().getResource("halamanUtamaUser.fxml"));
         stage.setTitle("Halaman Utama");
