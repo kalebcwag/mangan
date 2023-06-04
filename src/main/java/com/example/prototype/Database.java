@@ -2,13 +2,16 @@ package com.example.prototype;
 
 import java.util.ArrayList;
 import java.util.Objects;
-
 import javafx.scene.chart.PieChart.Data;
 
 public class Database {
-    
-    public static ArrayList<RumahMakan> ListRumahMakan = new ArrayList<>();
-    public static ArrayList<User> arrUser = new ArrayList<>();
+    public static ArrayList<User> arrUser = new ArrayList<User>();
+    public static ArrayList<RumahMakan> ListRumahMakan = new ArrayList<RumahMakan>();
+    public static ArrayList<Kategori> listKategori = new ArrayList<Kategori>();
+
+    public static void addUser(User user){arrUser.add(user);}
+    public static void addRm(RumahMakan rm) {ListRumahMakan.add(rm);}
+    public static void addCategory(Kategori kategori){listKategori.add(kategori);}
 
     public static ArrayList<RumahMakan> toSearchByKeyword(String keyWord) {
         ArrayList<RumahMakan> rmlist = new ArrayList<>();
@@ -44,9 +47,7 @@ public class Database {
             rm.display();
         }
     }
-
-    public static void add(RumahMakan rm) {
-        ListRumahMakan.add(rm);
+    public static ArrayList<Kategori> getListKategori() {
+        return listKategori;
     }
-    public static void add(User user){arrUser.add(user);}
 }
