@@ -14,6 +14,10 @@ public class Database {
     public static void addRm(RumahMakan rm) {ListRumahMakan.add(rm);}
     public static void addCategory(Kategori kategori){listKategori.add(kategori);}
 
+    public static ArrayList<User> getArrUser(){
+        return arrUser;
+    }
+
     public static ArrayList<RumahMakan> toSearchByKeyword(String keyWord) {
         ArrayList<RumahMakan> rmlist = new ArrayList<>();
         for (RumahMakan rm: ListRumahMakan) {

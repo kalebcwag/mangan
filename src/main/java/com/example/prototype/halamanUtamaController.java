@@ -66,7 +66,7 @@ public class halamanUtamaController {
 
     }
 
-    public void toGantiPassword(MouseEvent event) throws IOException {
+    public void toGantiPassword(MouseEvent event) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("formGantiPassword.fxml"));
         Scene scene = new Scene(root);
         Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();

@@ -13,6 +13,8 @@ public class App extends Application {
     private static Stage stage;
     private static App app;
 
+    public String user;
+
     @Override
     public void start(Stage stage) throws Exception {
         app = this;
@@ -58,8 +60,8 @@ public class App extends Application {
     }
 
     public static App getApp(){ return app;}
-    public void changeScene(String fxml) throws IOException {
-        Parent pane = FXMLLoader.load(getClass().getResource(fxml));
+    public static void changeScene(String fxml) throws IOException {
+        Parent pane = FXMLLoader.load(App.class.getResource(fxml));
         stage.getScene().setRoot(pane);
     }
 

@@ -86,13 +86,8 @@ public class loginPage {
             TextField search = (TextField) currentScene.lookup("#username");
 
             if (Database.cekUser(username, password)){
+                app.user = username;
                 app.changeScene("halamanUtamaAdmin.fxml");
-                Parent root = FXMLLoader.load(getClass().getResource("halamanUtamaAdmin.fxml"));
-                Scene scene = new Scene(root);
-                root.applyCss();
-                root.layout();
-                Label label = (Label) root.lookup("#haiUser");
-//                label.setText("Hai, "+search.getText());
             }
         }
     }
