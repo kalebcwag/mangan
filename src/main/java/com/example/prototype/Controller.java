@@ -25,13 +25,6 @@ public class Controller {
     private loginPage lp = new loginPage();
     App app = App.getApp();
 
-    HashMap<String, String> userMap = new HashMap<String, String>();
-
-    public void putUsers(){
-        userMap.put("admin", "admin");
-        userMap.put("user", "user");
-    }
-
 
     public void toLogin(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("loginAdmin.fxml"));
@@ -40,17 +33,6 @@ public class Controller {
 
         stage.setScene(scene);
         stage.show();
-    }
-
-    public void login(MouseEvent event) throws IOException {
-        if (lp.getUsername() != null || lp.getPassword() != null) {
-            String username = lp.getUsername().getText();
-            String password = lp.getPassword().getText();
-
-            if (Database.cekUser(username, password)){
-                app.changeScene("halamanUtamaAdmin.fxml");
-            }
-        }
     }
 
 

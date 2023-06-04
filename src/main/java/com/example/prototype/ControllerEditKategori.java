@@ -55,4 +55,5 @@ public class ControllerEditKategori implements Initializable {
         Database.deleteKategori(index);
         myKategoriList.getItems().remove(index);
     }
+
 }

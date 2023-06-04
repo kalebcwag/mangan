@@ -146,11 +146,6 @@
                               <Image url="@../images/nasgor.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="70.0" fitWidth="57.0" layoutX="643.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/trashIcon.png" />
-                           </image>
-                        </ImageView>
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="39.0" layoutY="312.0" onMouseClicked="#toDetailTempat" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
@@ -170,11 +165,6 @@
                               <Image url="@../images/nasgor.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="70.0" fitWidth="57.0" layoutX="645.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/trashIcon.png" />
-                           </image>
-                        </ImageView>
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="40.0" layoutY="455.0" onMouseClicked="#toDetailTempat" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
@@ -192,11 +182,6 @@
                         <ImageView fx:id="fotoWarung11" fitHeight="106.0" fitWidth="124.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/nasgor.jpg" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="70.0" fitWidth="57.0" layoutX="645.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/trashIcon.png" />
                            </image>
                         </ImageView>
                      </children>

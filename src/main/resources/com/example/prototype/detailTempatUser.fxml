@@ -6,14 +6,13 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.Controller">
    <children>
       <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0">
          <top>
@@ -77,16 +76,12 @@
                               <Font size="18.0" />
                            </font>
                         </Button>
-                        <Label  fx:id="namaTempat" layoutX="153.0" layoutY="22.0">
+                        <Label fx:id="namaTempat" layoutX="153.0" layoutY="22.0">
                            <font>
                               <Font name="System Bold" size="48.0" />
                            </font>
                         </Label>
-                        <ImageView fx:id="gambar1" fitHeight="200.0" fitWidth="275.0" layoutX="153.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/nasgor.jpg" />
-                           </image>
-                        </ImageView>
+                        <ImageView fx:id="gambarTempat" fitHeight="200.0" fitWidth="275.0" layoutX="153.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
                         <SplitPane layoutX="153.0" layoutY="370.0" orientation="VERTICAL" prefHeight="176.0" prefWidth="527.0">
                            <items>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="142.0" prefWidth="526.0">

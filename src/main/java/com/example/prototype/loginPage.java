@@ -97,6 +97,15 @@ public class loginPage {
         }
     }
 
+    public void register(MouseEvent event) throws IOException {
+        if (username.getText() != null && password.getText() != null) {
+            String username = this.username.getText();
+            String password = this.password.getText();
+            User u = new User(username, password);
+            Database.addUser(u);
+            app.changeScene("loginAdmin.fxml");
+        }
+    }
 
     public TextField getUsername() {
         return username;

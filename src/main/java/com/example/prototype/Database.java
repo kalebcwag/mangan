@@ -1,5 +1,6 @@
 package com.example.prototype;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Objects;
 import javafx.scene.chart.PieChart.Data;
@@ -42,7 +43,7 @@ public class Database {
         }
         return false;
     }
-    public static void display() {
+    public static void display() throws IOException {
         for (RumahMakan rm: ListRumahMakan) {
             rm.display();
         }
