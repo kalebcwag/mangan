@@ -20,4 +20,8 @@ public class Kategori {
     public void removeRm(RumahMakan rm){
         this.daftarRm.remove(rm);
     }
+
+    public ArrayList<RumahMakan> getDaftarRm() {
+        return daftarRm;
+    }
 }
