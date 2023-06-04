@@ -3,7 +3,6 @@ package com.example.prototype;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -32,6 +31,7 @@ public class RumahMakan {
         this.name = name;
         this.noTelp = noTelp;
         this.kategori = kategori;
+        this.addKategori();
         this.alamat = alamat;
         this.id = idNow;
 //        this.imgPath = imgPath;
@@ -76,11 +76,13 @@ public class RumahMakan {
         });
         return namaRumahMakan;
     }
-
-    public int getId() {
-        return id;
+    private void addKategori(){
+        for (Kategori kt: Database.getListKategori()) {
+            if (kt == this.kategori){
+                kt.addRm(this);
+            }
+        }
     }
-
     public String getName() {
         return name;
     }
