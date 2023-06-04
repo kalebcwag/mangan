@@ -15,7 +15,7 @@ public class RumahMakan {
     private int id;
     private String name;
     private String noTelp;
-    private String kategori;
+    private Kategori kategori;
     private String alamat;
     private static int idNow = 0;
     private Button namaRumahMakan;
@@ -23,7 +23,7 @@ public class RumahMakan {
     private Scene akar;
     private ArrayList<RumahMakan> listRM = new ArrayList<>();
 
-    public RumahMakan(String name, String noTelp, String kategori, String alamat) {
+    public RumahMakan(String name, String noTelp, Kategori kategori, String alamat) {
         this.name = name;
         this.noTelp = noTelp;
         this.kategori = kategori;
@@ -78,7 +78,7 @@ public class RumahMakan {
         return noTelp;
     }
 
-    public String getKategori() {
+    public Kategori getKategori() {
         return kategori;
     }
 
