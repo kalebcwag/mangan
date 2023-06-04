@@ -16,7 +16,7 @@
 
 <!--halo gais m  -->
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.ControllerHalamanUtama">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.ControllerHalamanUtama">
    <top>
       <AnchorPane prefHeight="146.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
          <children>
@@ -38,9 +38,14 @@
                         <Image url="@../images/iori.jpg" />
                      </image>
                   </ImageView>
-                  <Hyperlink layoutX="1074.0" layoutY="60.0" prefHeight="38.0" prefWidth="62.0" text="logout">
+                  <Hyperlink layoutX="1035.0" layoutY="42.0" onMouseClicked="#toLogin" prefHeight="38.0" prefWidth="74.0" text="Logout">
                      <font>
-                        <Font size="16.0" />
+                        <Font size="19.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutX="998.0" layoutY="81.0" onMouseClicked="#toGantiPassword" prefHeight="38.0" prefWidth="148.0" text="Ganti password">
+                     <font>
+                        <Font size="19.0" />
                      </font>
                   </Hyperlink>
                </children>
