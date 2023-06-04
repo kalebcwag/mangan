@@ -89,9 +89,9 @@ public class addRMController {
         String nama = this.nama.getText();
         String alamat = this.alamat.getText();
         String noTelp = this.noHp.getText();
-        String kategori = this.kategori.getText();
+        Kategori kategori = new Kategori(this.kategori.getText());
         RumahMakan rm = new RumahMakan(nama, noTelp, kategori, alamat);
-        Database.add(rm);
+        Database.addRm(rm);
         this.toHalamanUtamaAdmin(event);
     }
 
