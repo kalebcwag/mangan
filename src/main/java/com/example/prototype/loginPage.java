@@ -1,6 +1,10 @@
 package com.example.prototype;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -9,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -60,8 +65,13 @@ public class loginPage {
     }
 
     @FXML
-    void toHalamanUtamaUser(MouseEvent event) {
+    public void toHalamanUtamaUser(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("halamanUtamaUser.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 
+        stage.setScene(scene);
+        stage.show();
     }
 
     public PasswordField getPassword() {
@@ -72,12 +82,21 @@ public class loginPage {
         if (username.getText() != null && password.getText() != null) {
             String username = this.username.getText();
             String password = this.password.getText();
+            Scene currentScene = ((Node) event.getSource()).getScene();
+            TextField search = (TextField) currentScene.lookup("#username");
 
             if (Database.cekUser(username, password)){
                 app.changeScene("halamanUtamaAdmin.fxml");
+                Parent root = FXMLLoader.load(getClass().getResource("halamanUtamaAdmin.fxml"));
+                Scene scene = new Scene(root);
+                root.applyCss();
+                root.layout();
+                Label label = (Label) root.lookup("#haiUser");
+                label.setText("Hai, "+search.getText());
             }
         }
     }
+
 
     public TextField getUsername() {
         return username;

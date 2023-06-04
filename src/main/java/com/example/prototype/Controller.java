@@ -5,6 +5,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.PieChart.Data;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -70,6 +71,7 @@ public class Controller {
         Scene scene = new Scene(root);
         root.applyCss();
         root.layout();
+        Label label = (Label) root.lookup("#label");
         ScrollPane scrollPane = ((ScrollPane) root.lookup("#result"));
         VBox vbox = new VBox(5);
         ArrayList<RumahMakan> rmlist = Database.toSearchByKeyword(search.getText());
@@ -77,13 +79,55 @@ public class Controller {
             vbox.getChildren().add(rm.getNamaRumahMakan());
         }
         scrollPane.setContent(vbox);
-        ((Stage) currentScene.getWindow()).setScene(scene);;
+        label.setText("Warung yang menjual "+search.getText());
+        ((Stage) currentScene.getWindow()).setScene(scene);
         
+    }
+    public void toSearchByKeywordAdmin(MouseEvent event) throws IOException {
+        Scene currentScene = ((Node) event.getSource()).getScene();
+        TextField search = (TextField) currentScene.lookup("#searchBar");
+
+        Parent root = FXMLLoader.load(getClass().getResource("pencarianBedasarkankatakunciAdmin.fxml"));
+        Scene scene = new Scene(root);
+        root.applyCss();
+        root.layout();
+        Label label = (Label) root.lookup("#label");
+        ScrollPane scrollPane = ((ScrollPane) root.lookup("#result"));
+        VBox vbox = new VBox(5);
+        ArrayList<RumahMakan> rmlist = Database.toSearchByKeyword(search.getText());
+        for (RumahMakan rm: rmlist) {
+            vbox.getChildren().add(rm.getNamaRumahMakan());
+        }
+        scrollPane.setContent(vbox);
+        label.setText("Warung yang menjual "+search.getText());
+        ((Stage) currentScene.getWindow()).setScene(scene);
+
     }
 
     public void toSearchByCategories(MouseEvent event) throws IOException {
         Scene currentScene = ((Node) event.getSource()).getScene();
         Parent root = FXMLLoader.load(getClass().getResource("pencarianBedasarkankategori.fxml"));
+
+        root.applyCss();
+        root.layout();
+        Scene scene = new Scene(root);
+        ScrollPane scrollPane = (ScrollPane) root.lookup("#scrollpane");
+        VBox vbox = new VBox(5);
+        ArrayList<RumahMakan> rmlist = Database.toSearchByCategory("Nasi");
+        for (RumahMakan rm: rmlist) {
+            vbox.getChildren().add(rm.getNamaRumahMakan());
+        }
+        scrollPane.setContent(vbox);
+        ((Stage) currentScene.getWindow()).setScene(scene);;
+        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void toSearchByCategoriesAdmin(MouseEvent event) throws IOException {
+        Scene currentScene = ((Node) event.getSource()).getScene();
+        Parent root = FXMLLoader.load(getClass().getResource("pencarianBedasarkankategoriAdmin.fxml"));
 
         root.applyCss();
         root.layout();
