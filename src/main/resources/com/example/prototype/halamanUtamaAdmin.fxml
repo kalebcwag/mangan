@@ -79,22 +79,7 @@
         <content>
           <AnchorPane fx:id="restoItemsContainer" minHeight="0.0" minWidth="0.0" prefHeight="934.0" prefWidth="876.0">
                <children>
-                  <TextField fx:id="searchBar" layoutX="37.0" layoutY="35.0" prefHeight="51.0" prefWidth="623.0" promptText="Mau makan apa?">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </TextField>
-                  <Button fx:id="tombolCari" layoutX="658.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#toSearchByKeywordAdmin" prefHeight="53.0" prefWidth="86.0" text="Cari">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Button>
-                  <Label fx:id="labelFavorites" layoutX="43.0" layoutY="107.0" text="10 Favorites">
-                     <font>
-                        <Font name="System Bold" size="36.0" />
-                     </font>
-                  </Label>
-                  <AnchorPane layoutX="38.0" layoutY="162.0" onMouseClicked="#toDetailTempat" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
+                  <AnchorPane layoutX="38.0" layoutY="162.0" onMouseClicked="#nasiGorengYaul" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
                      <children>
                         <Label fx:id="namaWarung" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Yaul">
                            <font>
@@ -113,7 +98,7 @@
                         </ImageView>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="39.0" layoutY="312.0" onMouseClicked="#toDetailTempat" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
+                  <AnchorPane layoutX="39.0" layoutY="312.0" onMouseClicked="#nasiGorengYaul" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
                      <children>
                         <Label fx:id="namaWarung1" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Yaul">
                            <font>
@@ -132,7 +117,7 @@
                         </ImageView>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="40.0" layoutY="455.0" onMouseClicked="#toDetailTempat" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
+                  <AnchorPane layoutX="40.0" layoutY="455.0" onMouseClicked="#nasiGorengYaul" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
                      <children>
                         <Label fx:id="namaWarung11" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Yaul">
                            <font>
@@ -151,6 +136,21 @@
                         </ImageView>
                      </children>
                   </AnchorPane>
+                  <TextField fx:id="searchBar" layoutX="37.0" layoutY="35.0" prefHeight="51.0" prefWidth="623.0" promptText="Mau makan apa?">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="tombolCari" layoutX="658.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#toSearchByKeywordAdmin" prefHeight="53.0" prefWidth="86.0" text="Cari">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="labelFavorites" layoutX="43.0" layoutY="107.0" text="10 Favorites">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
                   <Hyperlink fx:id="tambahButton" layoutX="538.0" layoutY="115.0" onMouseClicked="#toTambahTempatMakan" style="-fx-underline: true;" text="Tambah Tempat Makan">
                      <font>
                         <Font size="20.0" />

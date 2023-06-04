@@ -150,6 +150,15 @@ public class ControllerHalamanUtama implements Initializable {
         stage.show();
     }
 
+    public void nasiGorengYaul(MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("nasiGorengYaul.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
+        stage.show();
+    }
+
     public void toGantiPassword(MouseEvent event) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("formGantiPassword.fxml"));
         Scene scene = new Scene(root);
