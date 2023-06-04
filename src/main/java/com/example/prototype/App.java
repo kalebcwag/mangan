@@ -25,6 +25,10 @@ public class App extends Application {
         Kategori k2 = new Kategori("Mie");
         Kategori k3 = new Kategori("Snack");
 
+        Database.addCategory(k1);
+        Database.addCategory(k2);
+        Database.addCategory(k3);
+
         Database.addUser(kaleb);
         Database.addUser(yandi);
         Database.addUser(glen);
@@ -39,9 +43,6 @@ public class App extends Application {
             Database.addRm(r);
         }
 
-        Database.addCategory(k1);
-        Database.addCategory(k2);
-        Database.addCategory(k3);
 
         Parent root = FXMLLoader.load(getClass().getResource("halamanUtamaUser.fxml"));
         stage.setTitle("Halaman Utama");
