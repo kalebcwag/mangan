@@ -6,9 +6,9 @@ import java.util.Objects;
 import javafx.scene.chart.PieChart.Data;
 
 public class Database {
-    public static ArrayList<User> arrUser = new ArrayList<User>();
-    public static ArrayList<RumahMakan> ListRumahMakan = new ArrayList<RumahMakan>();
-    public static ArrayList<Kategori> listKategori = new ArrayList<Kategori>();
+    private static ArrayList<User> arrUser = new ArrayList<User>();
+    private static ArrayList<RumahMakan> ListRumahMakan = new ArrayList<RumahMakan>();
+    private static ArrayList<Kategori> listKategori = new ArrayList<Kategori>();
 
     public static void addUser(User user){arrUser.add(user);}
     public static void addRm(RumahMakan rm) {ListRumahMakan.add(rm);}
