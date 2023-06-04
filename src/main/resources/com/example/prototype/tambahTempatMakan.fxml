@@ -87,16 +87,6 @@
                   <Font size="18.0" />
                </font>
             </TextField>
-            <Label fx:id="labelUploadFoto" layoutX="41.0" layoutY="398.0" text="Upload Foto">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
-            <Button fx:id="buttonUploadFoto" layoutX="40.0" layoutY="436.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="196.0" text="Upload foto">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
             <Button fx:id="cancelButton" cancelButton="true" layoutX="897.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#toHalamanUtamaAdmin" prefHeight="40.0" prefWidth="118.0" text="Cancel">
                <font>
                   <Font size="18.0" />
