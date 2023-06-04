@@ -26,7 +26,7 @@ public class Database {
     public static ArrayList<RumahMakan> toSearchByCategory(String keyWord) {
         ArrayList<RumahMakan> rmlist = new ArrayList<>();
         for (RumahMakan rm: ListRumahMakan) {
-            if ((rm.getKategori().toLowerCase()).contains(keyWord.toLowerCase())) {
+            if ((rm.getKategori().getNama().toLowerCase()).contains(keyWord.toLowerCase())) {
                 rmlist.add(rm);
             }
 
@@ -49,5 +49,9 @@ public class Database {
     }
     public static ArrayList<Kategori> getListKategori() {
         return listKategori;
+    }
+
+    public static void deleteKategori(int index){
+        listKategori.remove(index);
     }
 }
