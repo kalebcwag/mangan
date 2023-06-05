@@ -156,7 +156,7 @@
                         </AnchorPane>
                         <Label fx:id="labelFavorites" layoutX="14.0" layoutY="61.0" text="10 Favorites">
                            <font>
-                              <Font name="System Bold" size="36.0" />
+                              <Font name="System Bold" size="35.0" />
                            </font>
                         </Label>
                         <AnchorPane layoutX="10.0" layoutY="494.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="424.0" style="-fx-background-color: #FAFAFA;">
