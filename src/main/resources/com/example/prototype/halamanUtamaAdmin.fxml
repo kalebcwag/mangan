@@ -16,7 +16,7 @@
 
 <!--halo gais m  -->
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.ControllerHalamanUtama">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.ControllerHalamanUtama">
    <top>
       <AnchorPane prefHeight="146.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
          <children>
@@ -75,7 +75,7 @@
       </ScrollPane>
    </left>
    <center>
-      <ScrollPane prefHeight="674.0" prefWidth="1002.0" BorderPane.alignment="CENTER">
+      <ScrollPane fx:id="SP" prefHeight="674.0" prefWidth="1002.0" BorderPane.alignment="CENTER">
         <content>
           <AnchorPane fx:id="restoItemsContainer" minHeight="0.0" minWidth="0.0" prefHeight="934.0" prefWidth="876.0">
                <children>
