@@ -12,7 +12,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -20,16 +24,22 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 
 public class ControllerHalamanUtama implements Initializable {
     @FXML
     private VBox kategoriVbox;
+    @FXML
+    private AnchorPane restoItemsContainer;
+    @FXML
+    private ScrollPane SP;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         for (Kategori kt: Database.getListKategori()) {
             Button bt = new Button(kt.getNama());
             bt.setId(kt.getNama());
             bt.setPrefSize(95,45);
+            kategoriVbox.setSpacing(10);
             kategoriVbox.getChildren().add(bt);
         }
     }
@@ -37,8 +47,21 @@ public class ControllerHalamanUtama implements Initializable {
     public void readKategori(String namaKategori){
         for (Kategori kt:Database.getListKategori()) {
             if (kt.getNama().equals(namaKategori)){
+
+                VBox ap = new VBox();
                 for (RumahMakan rm : kt.getDaftarRm()) {
+                    FlowPane fp = new FlowPane();
+                    fp.setPrefSize(700,135);
+                    ImageView imgv = new ImageView();
+                    Image img = new Image("file:///F:/Documents/UKDW/Semester%204/Praktikum%20RPL-BO/Project/mangan/src/main/resources/com/example/images/nasiIcon.jpg");
+                    imgv.setImage(img);
+                    imgv.setFitHeight(120);
+                    imgv.setFitWidth(120);
+                    Label lb = new Label(rm.getName());
+                    fp.getChildren().addAll(imgv,lb);
+                    ap.getChildren().add(fp);
                 }
+                SP.setContent(ap);
             }
         }
     }
