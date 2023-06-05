@@ -28,16 +28,6 @@ public class Database {
         }
         return rmlist;
     }
-    public static ArrayList<RumahMakan> toSearchByCategory(String keyWord) {
-        ArrayList<RumahMakan> rmlist = new ArrayList<>();
-        for (RumahMakan rm: ListRumahMakan) {
-            if ((rm.getKategori().getNama().toLowerCase()).contains(keyWord.toLowerCase())) {
-                rmlist.add(rm);
-            }
-
-        }
-        return rmlist;
-    }
 
     public static boolean cekUser(String username, String password){
         for (User u: arrUser) {
@@ -47,11 +37,7 @@ public class Database {
         }
         return false;
     }
-    public static void display() throws IOException {
-        for (RumahMakan rm: ListRumahMakan) {
-            rm.display();
-        }
-    }
+
     public static ArrayList<Kategori> getListKategori() {
         return listKategori;
     }

@@ -81,25 +81,7 @@ public class ControllerHalamanUtama implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-    public void toSearchByCategoriesAdmin(MouseEvent event) throws IOException {
-        Scene currentScene = ((Node) event.getSource()).getScene();
-        Parent root = FXMLLoader.load(getClass().getResource("pencarianBedasarkankategoriAdmin.fxml"));
-        root.applyCss();
-        root.layout();
-        Scene scene = new Scene(root);
-        ScrollPane scrollPane = (ScrollPane) root.lookup("#scrollpane");
-        VBox vbox = new VBox(5);
-        ArrayList<RumahMakan> rmlist = Database.toSearchByCategory("Nasi");
-        for (RumahMakan rm: rmlist) {
-            vbox.getChildren().add(rm.getNamaRumahMakan());
-        }
-        scrollPane.setContent(vbox);
-        ((Stage) currentScene.getWindow()).setScene(scene);;
-        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 
-        stage.setScene(scene);
-        stage.show();
-    }
     public void toSearchByKeywordAdmin(MouseEvent event) throws IOException {
         Scene currentScene = ((Node) event.getSource()).getScene();
         TextField search = (TextField) currentScene.lookup("#searchBar");
@@ -120,14 +102,7 @@ public class ControllerHalamanUtama implements Initializable {
         ((Stage) currentScene.getWindow()).setScene(scene);
 
     }
-    public void toDetailTempat(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("detailTempat.fxml"));
-        Scene scene = new Scene(root);
-        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 
-        stage.setScene(scene);
-        stage.show();
-    }
     public void toTambahTempatMakan(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("tambahTempatMakan.fxml"));
         Scene scene = new Scene(root);
@@ -136,14 +111,7 @@ public class ControllerHalamanUtama implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-    public void toDetailTempatUser(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("detailTempatUser.fxml"));
-        Scene scene = new Scene(root);
-        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 
-        stage.setScene(scene);
-        stage.show();
-    }
     public void toSearchByKeyword(MouseEvent event) throws IOException {
         Scene currentScene = ((Node) event.getSource()).getScene();
         TextField search = (TextField) currentScene.lookup("#searchBar");

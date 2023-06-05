@@ -74,10 +74,6 @@ public class loginPage {
         stage.show();
     }
 
-    public PasswordField getPassword() {
-        return password;
-    }
-
     public void login(MouseEvent event) throws IOException {
         if (username.getText() != null && password.getText() != null) {
             String username = this.username.getText();
@@ -102,11 +98,4 @@ public class loginPage {
         }
     }
 
-    public TextField getUsername() {
-        return username;
-    }
-
-    public Label getWarning() {
-        return warning;
-    }
 }

@@ -148,12 +148,7 @@
                         </ScrollPane>
                      </items>
                   </SplitPane>
-                  <Button fx:id="editButton" layoutX="637.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#toEditTempatMakan" prefHeight="39.0" prefWidth="94.0" text="Edit">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="deleteButton" layoutX="530.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#delete" prefHeight="39.0" prefWidth="94.0" text="Delete">
+                  <Button fx:id="deleteButton" layoutX="586.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#delete" prefHeight="39.0" prefWidth="94.0" text="Delete">
                      <font>
                         <Font size="18.0" />
                      </font>
