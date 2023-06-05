@@ -16,7 +16,7 @@
 
 <!--halo gais m  -->
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.ControllerHalamanUtama">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prototype.ControllerHalamanUtama">
    <top>
       <AnchorPane prefHeight="146.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
          <children>
@@ -79,63 +79,6 @@
         <content>
           <AnchorPane fx:id="restoItemsContainer" minHeight="0.0" minWidth="0.0" prefHeight="934.0" prefWidth="876.0">
                <children>
-                  <AnchorPane layoutX="38.0" layoutY="162.0" onMouseClicked="#nasiGorengYaul" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
-                     <children>
-                        <Label fx:id="namaWarung" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Yaul">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="deskripsi" layoutX="143.0" layoutY="61.0" prefHeight="66.0" prefWidth="481.0" text="Nasi goreng yang dimasak dengan bumbu asli khas Tegal." wrapText="true">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <ImageView fx:id="fotoWarung" fitHeight="106.0" fitWidth="124.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/nasgor.jpg" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane layoutX="39.0" layoutY="312.0" onMouseClicked="#nasiGorengYaul" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
-                     <children>
-                        <Label fx:id="namaWarung1" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Yaul">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="deskripsi1" layoutX="143.0" layoutY="61.0" prefHeight="66.0" prefWidth="481.0" text="Nasi goreng yang dimasak dengan bumbu asli khas Tegal." wrapText="true">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <ImageView fx:id="fotoWarung1" fitHeight="106.0" fitWidth="124.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/nasgor.jpg" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane layoutX="40.0" layoutY="455.0" onMouseClicked="#nasiGorengYaul" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
-                     <children>
-                        <Label fx:id="namaWarung11" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Yaul">
-                           <font>
-                              <Font size="32.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="deskripsi11" layoutX="143.0" layoutY="61.0" prefHeight="66.0" prefWidth="481.0" text="Nasi goreng yang dimasak dengan bumbu asli khas Tegal." wrapText="true">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Label>
-                        <ImageView fx:id="fotoWarung11" fitHeight="106.0" fitWidth="124.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/nasgor.jpg" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
                   <TextField fx:id="searchBar" layoutX="37.0" layoutY="35.0" prefHeight="51.0" prefWidth="623.0" promptText="Mau makan apa?">
                      <font>
                         <Font size="24.0" />
@@ -156,6 +99,158 @@
                         <Font size="20.0" />
                      </font>
                   </Hyperlink>
+                  <AnchorPane layoutX="-25.0" layoutY="158.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="424.0" style="-fx-background-color: #FAFAFA;">
+                     <children>
+                        <Label fx:id="namaWarung" layoutX="141.0" layoutY="5.0" prefHeight="47.0" prefWidth="246.0" text="Nasi Goreng Yaul">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="deskripsi" layoutX="141.0" layoutY="38.0" prefHeight="44.0" prefWidth="231.0" text="Nasi goreng khas tegal." wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="fotoWarung" fitHeight="84.0" fitWidth="121.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/nasgor.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-24.0" layoutY="285.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="424.0" style="-fx-background-color: #FAFAFA;">
+                     <children>
+                        <Label fx:id="namaWarung1" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Gilang">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="deskripsi1" layoutX="142.0" layoutY="37.0" prefHeight="45.0" prefWidth="230.0" text="Nasi goreng pecinta ayam" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="fotoWarung1" fitHeight="88.0" fitWidth="121.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/nasgor.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-23.0" layoutY="398.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="424.0" style="-fx-background-color: #FAFAFA;">
+                     <children>
+                        <Label fx:id="namaWarung11" layoutX="141.0" layoutY="5.0" text="Mie Goreng Jawir">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="deskripsi11" layoutX="141.0" layoutY="29.0" prefHeight="66.0" prefWidth="235.0" text="Mie goreng khas jawa" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="fotoWarung11" fitHeight="94.0" fitWidth="121.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/mieIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="433.0" layoutY="398.0" onMouseClicked="#nasiGorengYaul" prefHeight="110.0" prefWidth="443.0" style="-fx-background-color: #FAFAFA;">
+                     <children>
+                        <Label fx:id="namaWarung2" layoutX="141.0" layoutY="5.0" text="Nasi Cumi Hitam Pekat">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="deskripsi2" layoutX="140.0" layoutY="35.0" prefHeight="55.0" prefWidth="230.0" text="Hitam banget lek" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="fotoWarung2" fitHeight="94.0" fitWidth="110.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/nasicumihitam.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-30.0" layoutY="520.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="424.0" style="-fx-background-color: #FAFAFA;">
+                     <children>
+                        <Label fx:id="namaWarung4" layoutX="141.0" layoutY="5.0" text="Tahu Wolak Walik">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="deskripsi4" layoutX="143.0" layoutY="35.0" prefHeight="64.0" prefWidth="239.0" text="Pusing" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="fotoWarung4" fitHeight="91.0" fitWidth="121.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tahuwalik.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="441.0" layoutY="166.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="447.0" style="-fx-background-color: #FAFAFA;">
+                     <children>
+                        <Label fx:id="namaWarung5" layoutX="141.0" layoutY="5.0" prefHeight="47.0" prefWidth="246.0" text="Pecel Lele Yatman">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="deskripsi5" layoutX="141.0" layoutY="38.0" prefHeight="44.0" prefWidth="226.0" text="Pecel lele ada pahanya" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="fotoWarung5" fitHeight="91.0" fitWidth="108.0" layoutX="11.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/pecellele.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="435.0" layoutY="275.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="424.0" style="-fx-background-color: #FAFAFA;">
+                     <children>
+                        <Label fx:id="namaWarung6" layoutX="141.0" layoutY="5.0" prefHeight="47.0" prefWidth="246.0" text="Es Campur Apa">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="deskripsi6" layoutX="141.0" layoutY="38.0" prefHeight="44.0" prefWidth="301.0" text="Bingung" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="fotoWarung6" fitHeight="100.0" fitWidth="98.0" layoutX="20.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/escampur.jpeg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="424.0" layoutY="527.0" onMouseClicked="#nasiGorengYaul" prefHeight="110.0" prefWidth="452.0" style="-fx-background-color: #FAFAFA;">
+                     <children>
+                        <Label fx:id="namaWarung21" layoutX="141.0" layoutY="5.0" text="Pizza Italiano">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="deskripsi21" layoutX="140.0" layoutY="35.0" prefHeight="55.0" prefWidth="230.0" text="Pizza numero uno" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="fotoWarung21" fitHeight="94.0" fitWidth="110.0" layoutX="24.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/pizza.jpeg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
                </children>
             </AnchorPane>
         </content>
