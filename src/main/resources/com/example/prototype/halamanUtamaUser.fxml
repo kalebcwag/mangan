@@ -64,57 +64,57 @@
                <content>
                   <AnchorPane fx:id="restoItemsContainer" minHeight="0.0" minWidth="0.0" prefHeight="815.0" prefWidth="1412.0">
                      <children>
-                        <AnchorPane layoutX="38.0" layoutY="179.0" onMouseClicked="#nasiGorengYaul" prefHeight="132.0" prefWidth="707.0" style="-fx-background-color: #FAFAFA;">
+                        <AnchorPane layoutX="14.0" layoutY="103.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="424.0" style="-fx-background-color: #FAFAFA;">
                            <children>
-                              <Label fx:id="namaWarung" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Yaul">
+                              <Label fx:id="namaWarung" layoutX="141.0" layoutY="5.0" prefHeight="47.0" prefWidth="246.0" text="Nasi Goreng Yaul">
                                  <font>
-                                    <Font size="32.0" />
+                                    <Font size="30.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="deskripsi" layoutX="143.0" layoutY="61.0" prefHeight="66.0" prefWidth="481.0" text="Nasi goreng yang dimasak dengan bumbu asli khas Tegal." wrapText="true">
+                              <Label fx:id="deskripsi" layoutX="141.0" layoutY="38.0" prefHeight="44.0" prefWidth="231.0" text="Nasi goreng khas tegal." wrapText="true">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
                               </Label>
-                              <ImageView fx:id="fotoWarung" fitHeight="106.0" fitWidth="124.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="fotoWarung" fitHeight="84.0" fitWidth="121.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../images/nasgor.jpg" />
                                  </image>
                               </ImageView>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="39.0" layoutY="328.0" onMouseClicked="#nasiGorengYaul" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
+                        <AnchorPane layoutX="12.0" layoutY="230.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="424.0" style="-fx-background-color: #FAFAFA;">
                            <children>
                               <Label fx:id="namaWarung1" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Yaul">
                                  <font>
-                                    <Font size="32.0" />
+                                    <Font size="30.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="deskripsi1" layoutX="143.0" layoutY="61.0" prefHeight="66.0" prefWidth="481.0" text="Nasi goreng yang dimasak dengan bumbu asli khas Tegal." wrapText="true">
+                              <Label fx:id="deskripsi1" layoutX="142.0" layoutY="37.0" prefHeight="45.0" prefWidth="230.0" text="Nasi goreng khas Tegal." wrapText="true">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
                               </Label>
-                              <ImageView fx:id="fotoWarung1" fitHeight="106.0" fitWidth="124.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="fotoWarung1" fitHeight="88.0" fitWidth="121.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../images/nasgor.jpg" />
                                  </image>
                               </ImageView>
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="40.0" layoutY="471.0" onMouseClicked="#nasiGorengYaul" prefHeight="133.0" prefWidth="711.0" style="-fx-background-color: #FAFAFA;">
+                        <AnchorPane layoutX="11.0" layoutY="364.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="424.0" style="-fx-background-color: #FAFAFA;">
                            <children>
                               <Label fx:id="namaWarung11" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Yaul">
                                  <font>
-                                    <Font size="32.0" />
+                                    <Font size="30.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="deskripsi11" layoutX="143.0" layoutY="61.0" prefHeight="66.0" prefWidth="481.0" text="Nasi goreng yang dimasak dengan bumbu asli khas Tegal." wrapText="true">
+                              <Label fx:id="deskripsi11" layoutX="141.0" layoutY="29.0" prefHeight="66.0" prefWidth="235.0" text="Nasi goreng khas Tegal." wrapText="true">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
                               </Label>
-                              <ImageView fx:id="fotoWarung11" fitHeight="106.0" fitWidth="124.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="fotoWarung11" fitHeight="94.0" fitWidth="121.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../images/nasgor.jpg" />
                                  </image>
@@ -135,11 +135,87 @@
                               </Button>
                            </children>
                         </AnchorPane>
-                        <Label fx:id="labelFavorites" layoutX="21.0" layoutY="65.0" text="10 Favorites">
+                        <AnchorPane layoutX="499.0" layoutY="363.0" onMouseClicked="#nasiGorengYaul" prefHeight="110.0" prefWidth="443.0" style="-fx-background-color: #FAFAFA;">
+                           <children>
+                              <Label fx:id="namaWarung2" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Yaul">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="deskripsi2" layoutX="140.0" layoutY="35.0" prefHeight="55.0" prefWidth="230.0" text="Nasi goreng khas Tegal." wrapText="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="fotoWarung2" fitHeight="94.0" fitWidth="110.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/nasgor.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="labelFavorites" layoutX="14.0" layoutY="61.0" text="10 Favorites">
                            <font>
                               <Font name="System Bold" size="36.0" />
                            </font>
                         </Label>
+                        <AnchorPane layoutX="10.0" layoutY="494.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="424.0" style="-fx-background-color: #FAFAFA;">
+                           <children>
+                              <Label fx:id="namaWarung4" layoutX="141.0" layoutY="5.0" text="Nasi Goreng Yaul">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="deskripsi4" layoutX="143.0" layoutY="35.0" prefHeight="64.0" prefWidth="239.0" text="Nasi goreng khas Tegal." wrapText="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="fotoWarung4" fitHeight="91.0" fitWidth="121.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/nasgor.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="499.0" layoutY="99.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="447.0" style="-fx-background-color: #FAFAFA;">
+                           <children>
+                              <Label fx:id="namaWarung5" layoutX="141.0" layoutY="5.0" prefHeight="47.0" prefWidth="246.0" text="Nasi Goreng Yaul">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="deskripsi5" layoutX="141.0" layoutY="38.0" prefHeight="44.0" prefWidth="226.0" text="Nasi goreng khas tegal." wrapText="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="fotoWarung5" fitHeight="91.0" fitWidth="108.0" layoutX="11.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/nasgor.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="499.0" layoutY="232.0" onMouseClicked="#nasiGorengYaul" prefHeight="98.0" prefWidth="424.0" style="-fx-background-color: #FAFAFA;">
+                           <children>
+                              <Label fx:id="namaWarung6" layoutX="141.0" layoutY="5.0" prefHeight="47.0" prefWidth="246.0" text="Nasi Goreng Yaul">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="deskripsi6" layoutX="141.0" layoutY="38.0" prefHeight="44.0" prefWidth="301.0" text="Nasi goreng khas tegal." wrapText="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="fotoWarung6" fitHeight="100.0" fitWidth="121.0" layoutX="3.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/nasgor.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
                      </children>
                   </AnchorPane>
                </content>
