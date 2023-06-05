@@ -1,30 +1,24 @@
 package com.example.prototype;
 
-import javafx.beans.property.ObjectProperty;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-import java.util.Scanner;
 
 public class ControllerHalamanUtama implements Initializable {
     @FXML
@@ -47,8 +41,14 @@ public class ControllerHalamanUtama implements Initializable {
     public void readKategori(String namaKategori){
         for (Kategori kt:Database.getListKategori()) {
             if (kt.getNama().equals(namaKategori)){
-
+                Label title = new Label();
+                title.setText(("Daftar tempat makan berdasarkan kategori: "+kt.getNama()+" ("+kt.getDaftarRm().size()+" tempat makan was found)"));
+                title.setStyle("-fx-font-weight: bold");
+                title.setPrefSize(900,50);
+                title.setFont(new Font("Arial",20));
+                title.setCenterShape(true);
                 VBox ap = new VBox();
+                ap.getChildren().add(title);
                 for (RumahMakan rm : kt.getDaftarRm()) {
                     FlowPane fp = new FlowPane();
                     fp.setPrefSize(700,135);
